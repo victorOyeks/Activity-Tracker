@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Activity Tracker</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/new_task}">Add New Task</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/all_task}">All Tasks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/pending_task}">Pending Tasks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/in_progress_task}">Tasks in Progress</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/completed_task}">Completed Tasks</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/user/logout}">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
